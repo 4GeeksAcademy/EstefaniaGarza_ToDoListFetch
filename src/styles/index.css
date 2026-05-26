@@ -46,14 +46,20 @@
 .delete-button {
     border: none;
     background: transparent;
-    color: #cc9a9a;
-    font-size: 2px;
+    color: #cc4b4b;
+    font-size: 24px;
+    line-height: 1;
     cursor: pointer;
-    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease, color 0.2s ease;
 }
 
 .task-item:hover .delete-button {
-    visibility: visible;
+    opacity: 1;
+}
+
+.delete-button:hover {
+  color: #8f2f2f;
 }
 
 .todo-footer {
@@ -69,25 +75,25 @@
 }
 
 .clear-button {
-  border: 1px solid #ead7d7;
-  background: transparent;
-  color: #b05b5b;
-  font-size: 13px;
-  padding: 6px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 
-    background-color 0.2s ease,
-    color 0.2s ease,
-    border-color 0.2s ease;
+    border: 1px solid #ead7d7;
+    background: transparent;
+    color: #b05b5b;
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .clear-button:hover {
-  background-color: #fbeaea;
-  color: #8f3f3f;
-  border-color: #d8b6b6;
+    background-color: #fbeaea;
+    color: #8f3f3f;
+    border-color: #d8b6b6;
 }
 
 .clear-button:active {
-  transform: translateY(1px);
+    transform: translateY(1px);
 }
